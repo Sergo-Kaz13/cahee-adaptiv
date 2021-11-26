@@ -1,0 +1,42 @@
+.gallery {
+  background-color: #ffe92f;
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 1536px;
+  }
+  &__info {
+    max-width: 600px;
+    &-title {
+      font-size: 90px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    &-text {
+      line-height: 1.588;
+    }
+  }
+  &__btn {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    line-height: 1.35;
+    background-color: rgb(85, 133, 162);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    border: none;
+    min-width: 200px;
+    min-height: 55px;
+    transition: .28s;
+    &:hover {
+      cursor: pointer;
+      transform: translate(2px, -2px);
+    }
+    &:active {
+      background-color: rgba(85, 133, 162, .7);
+      transform: translate(0, 0);
+    }
+  }
+}
