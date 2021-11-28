@@ -7,6 +7,7 @@
     align-items: center;
     text-align: center;
     min-height: 1536px;
+    padding: 15px 0;
   }
   &__info {
     max-width: 600px;
@@ -17,6 +18,7 @@
     }
     &-text {
       line-height: 1.588;
+      margin-bottom: 40px;
     }
   }
   &__btn {
@@ -37,6 +39,43 @@
     &:active {
       background-color: rgba(85, 133, 162, .7);
       transform: translate(0, 0);
+    }
+  }
+}
+.slide {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 44px;
+  margin-right: -30px;
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  &__main-img {
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: .28s;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+  }
+  &__block-img {
+    display: flex;
+    gap: 30px;
+    &_right {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+  &__item {
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: .28s;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
     }
   }
 }

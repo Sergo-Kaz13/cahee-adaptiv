@@ -1,0 +1,30 @@
+.subscribe {
+  background: url(../images/subscribe-bg.png) center / cover no-repeat;
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 500px;
+    gap: 25px;
+  }
+  &__title {
+    font-size: 40px;
+    color: rgb(38, 38, 38);
+    font-weight: bold;
+  }
+  &__text {
+    max-width: 545px;
+    font-size: 17px;
+    line-height: 1.588;
+  }
+  &__email {
+    border: 1px solid rgb(38, 38, 38);
+    background-color: rgba(38, 38, 38, 0);
+    width: 574px;
+    height: 59px;
+    font-size: 15px;
+    color: rgba(38, 38, 38, 0.1);
+    line-height: 1.8;
+    padding: 0 10px;
+  }
+}
