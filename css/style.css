@@ -843,3 +843,27 @@ body {
     font-size: 35px;
   }
 }
+
+.button-up {
+  display: inline-block;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+}
+
+.button-link {
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 25px;
+  line-height: 1.5;
+  color: #e4d448;
+  width: 40px;
+  height: 40px;
+  background: rgba(75, 201, 243, 0.8);
+  border-radius: 50%;
+}
