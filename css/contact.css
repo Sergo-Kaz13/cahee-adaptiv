@@ -16,6 +16,8 @@
   font-size: 17px;
   line-height: 1.5;
   padding-bottom: 60px;
+  max-width: 342px;
+  margin: 0 auto;
 }
 .content {
   display: flex;
