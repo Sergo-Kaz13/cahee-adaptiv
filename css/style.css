@@ -845,10 +845,16 @@ body {
 }
 
 .button-up {
-  display: inline-block;
+  display: none;
   position: fixed;
   right: 15px;
   bottom: 15px;
+}
+
+@media (max-width: 1024px) {
+  .button-up {
+    display: inline-block;
+  }
 }
 
 .button-link {
