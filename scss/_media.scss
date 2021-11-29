@@ -1,0 +1,37 @@
+.content {
+  @media (max-width: 763px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.date {
+  @media (max-width: 763px) {
+    padding-left: 0;
+  }
+}
+.form {
+  @media (max-width: 763px) {
+    width: 80%;
+  }
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+}
+.block__footer {
+  @media (max-width: 690px) {
+    padding: 20px 0;
+    flex-direction: column-reverse;
+  }
+}
+.blog {
+  & > p {
+    @media (max-width: 630px) {
+      width: 100%;
+      padding: 0 15px;
+    }
+  }
+  & > h2 {
+    margin-bottom: 25px;
+    font-size: 90px;
+  }
+}

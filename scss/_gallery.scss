@@ -1,0 +1,108 @@
+.gallery {
+  background-color: #ffe92f;
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 1536px;
+    padding: 15px 15px;
+  }
+  &__info {
+    max-width: 600px;
+    &-title {
+      font-size: 90px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    &-text {
+      line-height: 1.588;
+      margin-bottom: 40px;
+    }
+  }
+  &__btn {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    line-height: 1.35;
+    background-color: rgb(85, 133, 162);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    border: none;
+    min-width: 200px;
+    min-height: 55px;
+    transition: .28s;
+    &:hover {
+      cursor: pointer;
+      transform: translate(2px, -2px);
+    }
+    &:active {
+      background-color: rgba(85, 133, 162, .7);
+      transform: translate(0, 0);
+    }
+  }
+}
+.slide {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 44px;
+  overflow: hidden;
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  &__main-img {
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: .28s;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+    @media (max-width: 1200px) {
+      width: 100%;
+    };
+  }
+  &__block-img {
+    display: flex;
+    gap: 30px;
+    @media (max-width: 590px) {
+      flex-direction: column;
+    }
+    &_right {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      @media (max-width: 1200px) {
+        flex-direction: row;
+        width: 100%;
+      }
+      @media (max-width: 590px) {
+        flex-direction: column;
+        width: 100%;
+      }
+      // @media (min-width: 320px) {
+      //   flex-direction: column;
+      //   width: 100%;
+      // }
+    }
+  }
+  &__item {
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: .28s;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+    &_right {
+      @media (max-width: 1200px) {
+        width: 50%;
+      }
+      @media (max-width: 590px) {
+        width: 100%;
+      }
+    }
+  }
+}
